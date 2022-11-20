@@ -1,0 +1,15 @@
+.work-container {
+   width: 100%;
+   height: 678px;
+}
+.work-subcontainer {
+   width: 1510px;
+   height: 678px;
+   display: flex;
+}
+.work-subcontainer__imgs {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-gap: 0;
+}
