@@ -1,18 +1,17 @@
-/* * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   outline: none;
-} */
 .ourteam-container {
    width: 100%;
    height: 100vh;
    display: flex;
+   justify-content: center;
+   align-items: center;
    flex-wrap: nowrap;
    font-family: "Raleway", sans-serif;
+   margin-top: 114px;
 }
 .ourteam-subcontainer {
    width: 1170px;
+   justify-content: center;
+   align-items: center;
    margin-bottom: 114px;
 }
 .ourteam-subcontainer__workers {
@@ -25,13 +24,13 @@
    font-size: 24px;
    color: #2d3033;
    font-style: bold;
-   margin-top: 30px;
 }
 .ourteam-subcontainer__workers article h4 {
    font-weight: 400;
    font-size: 18px;
    color: #ff4343;
    margin-top: 5px;
+   text-transform: uppercase;
 }
 .ourteam-subcontainer__workers article p {
    font-weight: 400;
@@ -39,8 +38,69 @@
    color: #6c7279;
    text-align: left;
    margin-top: 17px;
+   margin-bottom: 37px;
 }
-.ourteam-subcontainer__workers article img {
-   margin-top: 37px;
+.ourteam-subcontainer__workers img {
+   display: inline-block;
    margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+   .ourteam-container {
+      width: 100%;
+      height: 100vh;
+   }
+   .ourteam-subcontainer {
+      width: 948px;
+      height: 520px;
+   }
+   .ourteam-container__workers article h3 {
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 25px;
+   }
+   .ourteam-subcontainer__workers article h4 {
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 4px;
+   }
+   .ourteam-subcontainer__workers article p {
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 22px;
+      margin-bottom: 39px;
+   }
+   .ourteam-subcontainer__workers img {
+      width: 227px;
+      height: 227px;
+   }
+}
+@media screen and (max-width: 479px) {
+   .ourteam-container {
+      width: 100%;
+      height: 100vh;
+   }
+   .ourteam-subcontainer {
+      width: 280px;
+      height: 2252px;
+   }
+   .ourteam-container__workers article h3 {
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 25px;
+   }
+   .ourteam-subcontainer__workers article h4 {
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 4px;
+   }
+   .ourteam-subcontainer__workers article p {
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 38px;
+      margin-bottom: 55px;
+   }
+   .ourteam-subcontainer__workers img {
+      width: 280px;
+      height: 227px;
+   }
 }

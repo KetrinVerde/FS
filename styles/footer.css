@@ -1,17 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Raleway:wght@400;500;600;700&display=swap");
 .footer-container {
    width: 100%;
-   height: 100vh;
+   height: 341px;
    font-family: "Raleway", sans-serif;
+   display: flex;
 }
 .footer-subcontainer {
-   width: 1510px;
-   /* display: flex;
-   justify-content: center;
-   align-items: center; */
+   width: 100%;
 }
 .footer-subcontainer__info {
-   width: 1170px;
    height: 251px;
    background: #353c65;
    color: #fff;
@@ -21,7 +17,6 @@
    text-align: center;
 }
 .footer-subcontainer__copyright {
-   width: 1170px;
    height: 90px;
    font-size: 18px;
    font-weight: 400;
@@ -54,9 +49,95 @@
    text-transform: none;
    text-align: center;
 }
-.footer-subcontainer__info img {
+.footer-subcontainer__info .share img {
+   display: inline-block;
 }
-footer {
-   /* flex: 0 0 auto;
-   как прижать футер,чтобы не было снизу пустого пространства? */
+.footer-subcontainer__info .location {
+   height: 112px;
+   width: 370px;
+}
+.footer-subcontainer__info .share {
+   height: 112px;
+   width: 370px;
+}
+.footer-subcontainer__info .about {
+   height: 112px;
+   width: 370px;
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+   .footer-container {
+      width: 100%;
+      height: 229px;
+   }
+   .footer-subcontainer__info {
+      height: 229px;
+   }
+   .footer-subcontainer__copyright {
+      height: 60px;
+      font-size: 14px;
+   }
+   .footer-subcontainer__copyright h5 {
+      font-size: 14px;
+   }
+   .footer-subcontainer__copyright span {
+      font-size: 14px;
+   }
+   .footer-subcontainer__info h5 {
+      font-size: 14px;
+      margin-bottom: 15px;
+   }
+   .footer-subcontainer__info .subtitle {
+      font-size: 14px;
+   }
+   .footer-subcontainer__info .location {
+      height: 49px;
+      width: 315px;
+   }
+   .footer-subcontainer__info .share {
+      height: 81px;
+      width: 314px;
+   }
+   .footer-subcontainer__info .about {
+      height: 79px;
+      width: 315px;
+   }
+}
+@media screen and (max-width: 479px) {
+   .footer-container {
+      width: 100%;
+      height: 540px;
+   }
+   .footer-subcontainer__info {
+      height: 540px;
+   }
+   .footer-subcontainer__copyright {
+      height: 90px;
+      font-size: 14px;
+   }
+   .footer-subcontainer__copyright h5 {
+      font-size: 14px;
+      font-weight: 700;
+   }
+   .footer-subcontainer__copyright span {
+      font-size: 14px;
+   }
+   .footer-subcontainer__info h5 {
+      font-size: 14px;
+      margin-bottom: 38px;
+   }
+   .footer-subcontainer__info .subtitle {
+      font-size: 14px;
+   }
+   .footer-subcontainer__info .location {
+      height: 66px;
+      width: 280px;
+   }
+   .footer-subcontainer__info .share {
+      height: 85px;
+      width: 279px;
+   }
+   .footer-subcontainer__info .about {
+      height: 102px;
+      width: 279px;
+   }
 }

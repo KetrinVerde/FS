@@ -1,28 +1,27 @@
-/* * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   outline: none;
-} */
 .features-container {
-   margin: 0 auto;
    font-family: "Raleway", sans-serif;
    width: 100%;
-   height: 100vh;
+   height: 747px;
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 116px;
-   margin-bottom: 133px;
+   /* margin-bottom: 133px; */
 }
 .features-subcontainer {
    max-width: 1170px;
+   height: 717px;
 }
 .features-container__description {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
+}
+.features-container__description article {
+   width: 370px;
+   height: 317px;
+   border: 2px solid red;
 }
 .features-container__description article h4 {
    font-weight: 900;
@@ -46,4 +45,71 @@
 .features-container__description article img {
    display: block;
    margin: 0 auto;
+}
+img {
+   display: block;
+}
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+   .features-container {
+      font-family: "Raleway", sans-serif;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 78px;
+      margin-bottom: 80px;
+   }
+   .features-subcontainer {
+      max-width: 948px;
+      height: 523px;
+   }
+   .features-container__description article h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+   }
+   .features-container__description article h5 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      height: 16px;
+      margin-bottom: 80px;
+   }
+   .features-container__description article img {
+      display: block;
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width: 479px) {
+   .features-container {
+      font-family: "Raleway", sans-serif;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 34px;
+   }
+   .features-subcontainer {
+      max-width: 280px;
+      height: 1542px;
+   }
+   .features-container__description article h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      margin-top: 30px;
+   }
+   .features-container__description article h5 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      height: 16px;
+      margin-bottom: 45px;
+   }
+   .features-container__description article img {
+      display: block;
+      margin: 0 auto;
+   }
 }
